@@ -1,4 +1,4 @@
-algoritmo zoroAdv;
+algoritmo zoroAdvText;
 variáveis
     C1, C2: inteiro;
 fim-variáveis
