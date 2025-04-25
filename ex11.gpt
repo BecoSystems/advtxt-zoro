@@ -1,0 +1,37 @@
+algoritmo zoroAdv;
+variáveis
+    C1, C2: inteiro;
+fim-variáveis
+início
+    imprima("Zoro estava lutando com um chefe da marinha, onde acabou sendo atordoado.\n");
+    imprima("Zoro acordou num calabouso, e percebeu que sua espada estava desaparecida.\n");
+    imprima("Por estar muito escuro, Zoro pode escolher entre pegar uma tocha(2) ou uma lamparina(1).\n");
+    imprima("Escolha: ");
+    C1 := leia();
+
+    se (C1 = 1) então
+        imprima("Apos pegar a lamparina, ele tentou sair do calabouso mas o guarda percebeu e o matou.\n");
+    senão
+        enquanto (C1 > 2 ou C1 < 1) faça
+            imprima("Opção inválida. Escolha novamente: ");
+            C1 := leia();
+        fim-enquanto
+
+        C2 := 10;
+        imprima("Apos pegar a tocha, ele tenta sair do calabouso porem um guarda percebe e o tenta impedir!\n");
+        imprima("Ele se defende utilizando do fogo da tocha para queimar o guarda\n");
+        imprima("Quando ele se da conta, ele esta diante de dois corredores\n");
+        imprima("Um deles tem uma porta e no outro tem um grande corredor com escada em caracol\n");
+        imprima("Escolha: Fugir pela porta(1) ou subir pela escada(2)\n");
+        imprima("Escolha: ");
+        C2 := leia();
+
+        se (C2 = 1) então
+            imprima("Ele abre a porta e entra na escuridão, quando se da conta esta caindo de uma montanha e morre quando chega no solo\n");
+        senão
+            imprima("Ele sobe na escada, onde encontra um guarda que estava guardando sua espada\n");
+            imprima("Ele o ataca com a tocha e o mata!\n");
+        fim-se
+    fim-se
+fim
+
